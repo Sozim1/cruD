@@ -1,37 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentação do CRUD</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        h1 {
-            color: #333;
-        }
-        h2 {
-            color: #444;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        code {
-            background-color: #f0f0f0;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-    </style>
-</head>
+
 <body>
     <h1>Documentação do CRUD</h1>
-
     <h2>Funcionalidades</h2>
     <ul>
         <li><strong>Create (Criar):</strong> Permite adicionar novos registros de usuário ao banco de dados.</li>
@@ -39,14 +8,12 @@
         <li><strong>Update (Atualizar):</strong> Permite editar informações dos registros de usuário existentes.</li>
         <li><strong>Delete (Excluir):</strong> Permite excluir registros de usuário do banco de dados.</li>
     </ul>
-
     <h2>Tecnologias Utilizadas</h2>
     <ul>
         <li>PHP: Linguagem de programação utilizada para desenvolver a lógica do CRUD.</li>
         <li>MySQL: Sistema de gerenciamento de banco de dados usado para armazenar os registros de usuário.</li>
         <li>HTML/CSS: Utilizados para criar a interface de usuário (UI) do CRUD.</li>
     </ul>
-
     <h2>Estrutura de Arquivos</h2>
     <ul>
         <li><code>add.php</code>: Página para adicionar um novo registro de usuário.</li>
@@ -56,7 +23,6 @@
         <li><code>pdf.php</code>: Página para gerar um PDF com os registros de usuário.</li>
         <li><code>database.php</code>: Arquivo de configuração para conectar ao banco de dados MySQL.</li>
     </ul>
-
     <h2>Instruções de Uso</h2>
     <ol>
         <li>Clone este repositório em seu ambiente de desenvolvimento local.</li>

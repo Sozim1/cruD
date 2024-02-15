@@ -2,13 +2,11 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     include("database.php");
 
-    // Preparação dos dados
     $user = $_POST['user'];
     $password = $_POST['password'];
     $email = $_POST['email'];
     $date_nasc = $_POST['date_nasc'];
 
-    // Inserção no banco de dados
     $sql = "INSERT INTO usuarios (user, password, email, date_nasc, date_reg) VALUES ('$user', '$password', '$email', '$date_nasc', NOW())";
 
     if ($conn->query($sql) === TRUE) {

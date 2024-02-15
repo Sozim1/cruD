@@ -3,26 +3,19 @@ include 'database.php';
 
 $error = "";
 
-// Verifica se o ID do registro a ser editado foi fornecido via GET
 if (isset($_GET['id']) && !empty($_GET['id'])) {
     $id = $_GET['id'];
 
-    // Verifica se o formulário foi submetido (ou seja, se o método de requisição é POST)
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Verifica se os dados do formulário foram recebidos corretamente
         if(isset($_POST['user'], $_POST['password'], $_POST['email'], $_POST['date_nasc'])) {
-            // Obtém os dados do formulário
             $user = $_POST['user'];
             $password = $_POST['password'];
             $email = $_POST['email'];
             $date_nasc = $_POST['date_nasc'];
 
-            // Constrói a consulta SQL de atualização
             $sql = "UPDATE usuarios SET user='$user', password='$password', email='$email', date_nasc='$date_nasc' WHERE id=$id";
 
-            // Executa a consulta SQL de atualização
             if (mysqli_query($conn, $sql)) {
-                // Redireciona para a página inicial após a edição
                 header("Location: index.php");
                 exit();
             } else {
@@ -33,7 +26,6 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
         }
     }
 
-    // Consulta o registro com o ID fornecido
     $sql = "SELECT * FROM usuarios WHERE id = $id";
     $result = mysqli_query($conn, $sql);
 
@@ -46,7 +38,6 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
     $error = "ID do registro não fornecido.";
 }
 
-// Fecha a conexão com o banco de dados
 mysqli_close($conn);
 ?>
 

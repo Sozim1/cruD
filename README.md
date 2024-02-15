@@ -31,7 +31,6 @@
         <li>Abra o CRUD em seu navegador acessando a página <code>index.php</code>.</li>
         <li>Utilize as funcionalidades do CRUD conforme necessário: adicionar, editar, excluir e visualizar registros de usuário.</li>
     </ol>
-
     <h2>Contribuição</h2>
     <p>Contribuições são bem-vindas! Sinta-se à vontade para abrir issues relatando problemas ou sugerir melhorias. Você também pode enviar pull requests com correções ou novos recursos.</p>
 </body>

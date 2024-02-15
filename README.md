@@ -26,7 +26,7 @@
     <h2>Instruções de Uso</h2>
     <ol>
         <li>Clone este repositório em seu ambiente de desenvolvimento local.</li>
-        <li>Configure um servidor web (por exemplo, Apache) e um servidor MySQL em seu ambiente local.</li>
+        <li>Configure um servidor web (por exemplo, Apache) e um servidor MySQL em seu ambiente local, aloque o arquivo CADASTRO na pasta Data do mysql.</li>
         <li>Importe o arquivo SQL fornecido para criar a estrutura do banco de dados e popular com dados de exemplo, se necessário.</li>
         <li>Abra o CRUD em seu navegador acessando a página <code>index.php</code>.</li>
         <li>Utilize as funcionalidades do CRUD conforme necessário: adicionar, editar, excluir e visualizar registros de usuário.</li>
